@@ -1,0 +1,270 @@
+#root > div > nav {
+
+  z-index: 9999;
+}
+
+nav.navbar {
+    display: flex;
+    align-items: center;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+    position: sticky;
+    width: 90%;
+    top: 0;
+    transition: 0.32s ease-in-out;
+    margin: 0 auto;
+    border-radius: 0px 0px 25px 25px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+nav.navbar.scrolled {
+    display: flex;
+    padding: 10px 75px;
+    background: #fff7ed92;
+    box-shadow: 0px 4px 40px rgba(73, 61, 47, 0.25);
+    border-radius: 0px 0px 25px 25px;
+    backdrop-filter: blur(10px);
+}
+
+#root > div > nav > div {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#basic-navbar-nav > div.me-auto.navbar-nav {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 20px;
+}
+
+#root > div > nav > div > a {
+  margin-right: 10%; 
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-icon a {
+  width: 30px;
+  height: 30px;
+  background: #2D2C2C;
+
+  display: inline-flex;
+  border-radius: 50%;
+  margin-left: 16px;
+  align-items: center;
+  justify-content: center;
+  transition:  0.32s ease-in-out;
+}
+
+.social-icon a:hover {
+  width: 35px;
+  height: 35px;
+  background: #ffc400;
+
+}
+
+#basic-navbar-nav > div.social-icon > a > img {
+
+  width: 16px;
+  height: auto;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+ 
+  #basic-navbar-nav > div.social-icon {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+  }
+
+  #basic-navbar-nav > div.me-auto.navbar-nav {
+    gap: 0;
+  }
+  #root > div > nav > div > button {
+    margin: 0;
+    border: none;
+  }
+
+
+  #root > div > nav > div > button > span {
+    border: none;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    width: auto;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 450px) {
+  #basic-navbar-nav > div.me-auto.navbar-nav {
+    margin-left: 12px;
+  }
+
+  .social-icon a {
+    width: 20px;
+    height: 20px;
+  }
+
+  #basic-navbar-nav > div.social-icon > a > img {
+    width: 12px;
+  }
+
+  nav.navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #root > div > nav > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #root > div > nav {
+    padding: 10px 0px !important;
+  }
+
+  nav.navbar.scrolled {
+    background: #fff7edc0;
+    backdrop-filter: blur(30px);
+  }
+
+  .logoIcon {
+    width: 2.5em;
+    box-sizing: border-box;
+    padding-left: 12px;
+  }
+
+}
+    
+/*
+
+#root > div  > div > nav {
+    z-index: 9999;
+  }
+  
+  #basic-navbar-nav > div.me-auto.navbar-nav {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight:600;
+    font-size: 20px;
+    gap: 20px
+  }
+  
+  nav.navbar {
+  
+    display: flex;
+    align-items: center;
+    padding: 36px 75px 36px 75px;
+  
+    position: sticky;
+    width: 80%;
+    top: 0;
+  
+    transition:  0.32s ease-in-out;
+    margin: 0 auto; 
+    border-radius: 0px 0px 25px 25px  ;
+    background-color: rgba(255, 255, 255, 0);
+  
+  
+  }
+  
+  nav.navbar.scrolled {
+    display: flex;
+    padding: 10px 75px 10px 75px;
+    background: #FFF7ED;
+    box-shadow: 0px 4px 40px rgba(73, 61, 47, 0.25);
+    border-radius: 0px 0px 25px 25px;
+    backdrop-filter: blur(10px);
+  
+  }
+  
+  .social-icon {
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .social-icon a {
+    width: 28px;
+    height: 28px;
+    background: #2D2C2C;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-left: 16px;
+    align-items: center;
+    justify-content: center;
+      
+  }
+  
+  .social-icon a:hover {
+  
+    background: #ffc400;
+  
+  }
+  
+  #root > div > div > nav > div > a {
+  
+    margin-right: 10%;
+  }
+  
+  
+  
+  @media (max-width: 992px) {
+  
+    #basic-navbar-nav > div.social-icon > a {
+      margin-left: 0;
+      margin-right: 16px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+  
+    #basic-navbar-nav > div.me-auto.navbar-nav {
+  
+      margin-top: 32px;
+    }
+  }
+  
+  @media (max-width: 365px) {
+  
+  
+    .social-icon a {
+      width: 28px;
+      height: 28px;
+      background: #2D2C2C;
+      display: inline-flex;
+      border-radius: 50%;
+      margin-left: 16px;
+      align-items: center;
+      justify-content: center;
+        
+    }
+    
+    #root > div > nav {
+  
+  
+      padding: 5px !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }*/

@@ -1,0 +1,166 @@
+
+
+.react-multiple-carousel__arrow, #root > div > div > section.mainCarouselContainer > div > 
+div.react-multi-carousel-list.container.carousel > button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right, 
+#root > div > div > section.mainCarouselContainer > div > div.react-multi-carousel-list.container.carousel > 
+button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left
+ {
+
+    background: none;
+    box-shadow: none;
+    padding-bottom: 35px;
+
+}
+
+.react-multiple-carousel__arrow::before, .react-multiple-carousel__arrow::after {
+    background: none;
+}
+
+#root > div > div > a > img {
+    padding: 20px 0px 50px 0px;
+    width: 45px;
+}
+
+.txtCards {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10% 0% 0;
+}
+
+.Card.Img, .card-img-top {
+    border-radius: 12px;
+}
+.cardsGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5% 5% 0% 5%;
+    justify-content: center;
+    gap: 5%;
+}
+
+.cardBackground {
+    background: #FFD984;
+    border-radius: 26px;
+    padding: 12px;
+    width: 100%;
+
+}
+
+.mainCard {
+
+    border: none;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
+    border: 12px solid #FFFFFF;
+    height: auto;
+
+}
+
+#root > div > div > a > img:hover {
+    width: 50px;
+}
+
+button.exploreBtn.btn.btn-dark {
+    
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #FFC400;
+    border-radius: 14px;
+    border: none;
+    padding: 10px 22px;
+    width: auto;
+    height: 50px;
+    margin: 0;
+}
+
+button.codeBtn.btn.btn-dark {
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+    border: 3px solid #FFC400;
+    border-radius: 14px;
+    color:#FFC400;
+    background: white;
+    border-radius: 14px;
+    padding: 8px 22px;
+    width: auto;
+    height: 50px;
+    margin: 0;
+}
+
+
+@media (max-width: 990px) {
+    button.exploreBtn.btn.btn-dark {
+        padding: 10px 10px;
+    }
+    button.codeBtn.btn.btn-dark {
+        padding: 10px 10px;
+    }
+}
+@media (max-width: 750px) {
+    .cardsGroup {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+     
+    }
+
+    button.exploreBtn.btn.btn-dark {
+        padding:0;
+        width: 100px;
+    }
+    button.codeBtn.btn.btn-dark {
+        padding:0;
+        width: 100px;
+    }
+    .cardBackground {
+        width: 100%;
+    }
+    .txtCards {
+
+        padding: 20% 0% 0%;
+    }
+}
+@media (max-width: 500px) { 
+
+    button.exploreBtn.btn.btn-dark {
+        margin-right: 10px !important;
+        padding:0;
+        width: 100px;
+    }
+    button.codeBtn.btn.btn-dark {
+        padding:0;
+        width: 100px;
+    }
+    /*
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }*/
+}
+
+@media (max-width: 358px) { 
+
+    button.exploreBtn.btn.btn-dark {
+        margin-bottom: 10px;
+       
+    }
+
+    .mainCard {
+        border: 5px solid #FFFFFF;
+        
+    }
+
+    
+}

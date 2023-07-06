@@ -27,9 +27,6 @@
   }
 }
 
-
-
-/** CANVAS  **/
 .canvasContainer {
   width: 100%;
 }
@@ -41,14 +38,11 @@ body {
   font-size: 16px;
 }
 
-
 .backgroundApp {
-
   display: flex;
   flex-direction: column;
   background-color: #FFD984;
   justify-content: center;
-
 }
  
 .App {
@@ -70,14 +64,12 @@ body {
 .logoIcon {
   width: 2em;
   box-sizing: border-box;
-
 }
+
 button, #root > div > div > div.mainFormContainer > form > input[type=submit]:nth-child(4) {
-  
   font-family: 'Outfit';
   font-size: 16px;
   font-weight: bolder;
-
   color: #212529;
   padding : 1rem 1.5rem;
   background: #FFC400;
@@ -93,7 +85,6 @@ button:hover, #root > div > div > div.mainFormContainer > form > input[type=subm
   background: #ffcc24;
   box-shadow: rgba(0, 0, 0, 0.25) 0 6px 10px;
   transform: translateY(-1px);
-
 }
 
 
@@ -107,15 +98,13 @@ button:hover, #root > div > div > div.mainFormContainer > form > input[type=subm
 
 
 h2 {
- 
   font-family: 'Outfit';
   font-weight: 700;
   font-size: 26px;
   color: #212529;
-
 }
-h4, h3 {
 
+h4, h3 {
   font-family: 'Outfit';
   font-weight: 700;
   font-size: 20px;
@@ -125,16 +114,14 @@ h4, h3 {
 
 
 h1 {
-
-margin-top: 30px;
-margin-bottom: 30px;
-font-family: 'Fredoka', sans-serif;
-font-weight: bold;
-font-style: normal;
-font-size: 55px;
-line-height: 109%;
-text-align: center;
-
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 55px;
+  line-height: 109%;
+  text-align: center;
 }
 
 
@@ -167,6 +154,4 @@ text-align: center;
   button {
     font-size: 13px;
   }
-
-    
 }

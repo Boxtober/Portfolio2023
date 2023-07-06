@@ -1,25 +1,21 @@
 #home > div > img {
-
     width: 50%;
 }
+
 #home > .TxtImgContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 5%;
     padding-bottom: 0;
-
 }
 
 .imgBanner {
-
     max-width: 45%;
     height: 50%;
     box-sizing: border-box;
     object-fit: cover;
 }
-
-
 
 .BannerMainContainer {
     display: flex;
@@ -27,9 +23,7 @@
     align-items: center;
 }
 
-
 .about {
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -38,11 +32,9 @@
 }
 
 .about > p {
-
     margin-top: 0;
     margin-bottom: 1rem;
     line-height: 170%;
-    
 }
 
 #home > div > div > div > img {
@@ -51,6 +43,7 @@
 
 #home > div > div > span {
     font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
     font-weight: bolder;
     background-color: #FFFFFF;
     padding: 15px;
@@ -60,9 +53,7 @@
 }
 
 #home > div > div > span::after{
-    
     content: "";  
-    
     border-top : 10px solid transparent;
     border-bottom : 10px solid transparent;
     border-left : 20px solid #FFFFFF;
@@ -70,12 +61,12 @@
     position: absolute;
     top: auto;
     left: auto;
-        
 }
 
 
 
 @media (max-width: 990px) {
+
     #home > .TxtImgContainer {
         display: flex;
         flex-direction: column-reverse;
@@ -87,6 +78,7 @@
 }
 
 @media (max-width: 500px) {
+    
     .designList {
         font-size: 13px !important;
     }

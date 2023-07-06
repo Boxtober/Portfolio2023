@@ -1,6 +1,5 @@
 
 import logo from "../assets/img/logo.png";
-
 import linkedin from '../assets/img/icon/linkedin.svg';
 import behance from '../assets/img/icon/behance.svg';
 import github from '../assets/img/icon/github.svg';

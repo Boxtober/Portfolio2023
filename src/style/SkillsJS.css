@@ -63,7 +63,6 @@
         margin-bottom: 7%;
     }
 
-
     .SecondJsContainer {
         display: flex;
         flex-direction: column;
@@ -71,7 +70,6 @@
     }
 
     .designItem {
-
         gap: 17px;
     }
 }

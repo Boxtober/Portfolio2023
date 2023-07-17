@@ -1,0 +1,17 @@
+@media screen and (min-width: 820px) {
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    body::-webkit-scrollbar-track {
+        background:  #FFD984;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgb(18, 18, 18); 
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(48, 48, 48); 
+        border-radius: 10px;
+    }
+}

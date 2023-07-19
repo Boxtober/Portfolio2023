@@ -65,11 +65,11 @@ export const Skills = () => {
             </div>
             <div className="designItem">
               <img src={indesignIcon} alt="indesign Icon"/>
-              <p className="designList">InDesign</p>
+              <p className="designList">Illustrator</p>
             </div>
             <div className="designItem">
               <img src={illustratorIcon} alt="illustrator Icon"/>
-              <p className="designList">Illustrator</p>
+              <p className="designList">InDesign</p>
             </div>
             <div className="designItem">
               <img src={blenderIcon} alt="blender Icon"/>

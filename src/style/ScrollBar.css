@@ -1,4 +1,4 @@
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 540px) {
 
     ::-webkit-scrollbar {
         width: 12px;
@@ -12,6 +12,5 @@
     }
     ::-webkit-scrollbar-thumb:hover {
         background: rgb(48, 48, 48); 
-        border-radius: 10px;
     }
 }

@@ -87,8 +87,8 @@ button:hover, #root > div > div > div.mainFormContainer > form > input[type=subm
   transform: translateY(-1px);
 }
 
-
-.bold {
+span.bold {
+  margin-bottom: 16px;
   font-weight: 700;
 }
 
@@ -104,12 +104,18 @@ h2 {
   color: #212529;
 }
 
-h4, h3 {
+h3 {
   font-family: 'Outfit';
   font-weight: 700;
   font-size: 20px;
   color: #838383;
   padding-bottom: 15px;
+}
+h4 {
+  font-family: 'Outfit';
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
 }
 
 

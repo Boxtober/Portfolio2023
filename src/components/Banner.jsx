@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Row } from "react-bootstrap";
 import flag from '../assets/img/flag.svg';
 import imgBanner from '../assets/img/imgBanner.png';
+import 'animate.css';
 
 
 export const Banner = () => {
@@ -71,7 +72,7 @@ export const Banner = () => {
                         <button href="#Contact">Contactez-moi !</button>
                         </a>
                     </div>                   
-                    <img src={imgBanner} alt="Banner image"/>
+                    <img src={imgBanner} alt="Banner image" class="animate__animated animate__bounceInRight"/>
                 </div>
                 
         </section>

@@ -1,3 +1,7 @@
+.projectsContainer {
+    padding-top: 50px;
+}
+
 
 
 .react-multiple-carousel__arrow, #root > div > div > section.mainCarouselContainer > div > 
@@ -46,7 +50,7 @@ button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left
     padding: 12px;
     width: 100%;
     height: max-content;
-
+    margin-bottom: 25px;
 }
 
 .mainCard {

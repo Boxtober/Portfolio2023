@@ -5,7 +5,7 @@ import { SkillsJS } from "./components/SkillsJS.jsx";
 import { Cards } from "./components/Cards.jsx"
 import { Contact } from "./components/Contact.jsx"
 import { Footer } from "./components/Footer.jsx"
-
+import { Projects } from "./components/Projects";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './app.css';
@@ -29,11 +29,14 @@ export default function App() {
             <h2>Projets développement web.</h2>
             <h3>Quelques projets réalisés dans le cadre de ma formation :</h3>
           </div>
-          <Cards />
+          <div className="projectsContainer">
+          <Projects /></div>
+          {/**<Cards /> */}
           <Contact />
           <Footer />
         </div> 
       </div>
+      
     </Suspense>
   );
 }

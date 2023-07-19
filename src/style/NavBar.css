@@ -23,7 +23,7 @@ nav.navbar {
 nav.navbar.scrolled {
     display: flex;
     padding: 10px 75px;
-    background: #fff7ed92;
+    background: #fff7ed99;
     box-shadow: 0px 4px 40px rgba(73, 61, 47, 0.25);
     border-radius: 0px 0px 25px 25px;
     backdrop-filter: blur(10px);

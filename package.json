@@ -17,11 +17,13 @@
     "@emailjs/browser": "^3.11.0",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.342",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-multi-carousel": "^2.8.3",
+    "react-on-screen": "^2.1.1",
     "react-router-dom": "^6.11.2",
     "react-router-hash-link": "^2.4.3"
   },

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Row } from "react-bootstrap";
 import flag from '../assets/img/flag.svg';
 import imgBanner from '../assets/img/imgBanner.png';
 import 'animate.css';
@@ -69,7 +68,7 @@ export const Banner = () => {
                         </div>
 
                         <a href="#Contact">
-                        <button href="#Contact">Contactez-moi !</button>
+                            <button href="#Contact">Contactez-moi !</button>
                         </a>
                     </div>                   
                     <img src={imgBanner} alt="Banner image" class="animate__animated animate__bounceInRight"/>

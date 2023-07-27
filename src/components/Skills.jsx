@@ -15,7 +15,6 @@ import 'react-multi-carousel/lib/styles.css';
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -43,19 +42,15 @@ export const Skills = () => {
         <h2>Outils & Technologies</h2>
         <h3>Développement Web & Design</h3>
 
-        {/* ----------------------------------------------- */}
-
         <div className="devEtDesignItem">
         <div className="itemContainer">
-          <h4>Dev tools</h4>
+          <h5>Dev tools</h5>
           <img src={devtools} alt="Dev tools Icons"/>
         </div>
 
-        {/* ----------------------------------------------- */}
-
         <div className="itemContainer">
 
-          <h4>Design tools</h4>
+          <h5>Design tools</h5>
 
           <section className="designItemContainer">
 

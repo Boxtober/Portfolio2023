@@ -1,22 +1,13 @@
-
-
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard.jsx";
-import projImg1 from '../assets/img/portfolio.jpg';
-
 import projet1 from '../assets/img/config3d.jpg';
 import projet2 from '../assets/img/neosettlers.jpg';
-
 import projet3 from '../assets/img/integrationcss.jpg';
 import projet4 from '../assets/img/portfolio.jpg';
 import projet5 from '../assets/img/axiosAcnh2.jpg';
 import projet6 from '../assets/img/meteo.jpg';
-import Card from 'react-bootstrap/Card';
 
 import 'animate.css';
-
-/*animate__fadeInDown*/
-
 
 export const Projects = () => {
 
@@ -49,7 +40,6 @@ export const Projects = () => {
       codeHref: "https://github.com/Boxtober/neo-front",
       buttonDescription: "Explore !"
     },
-   
     {
       title: "App Météo",
       description: "Une Single Page Applications permettant à l’utilisateur d’entrer le nom d’une ville afin de connaître ses conditions météorologiques.",
@@ -59,7 +49,6 @@ export const Projects = () => {
       codeHref: "https://github.com/Boxtober/api-meteo",
       buttonDescription: "Explore !"
     },
-
     {
       title: "Portfolio Automnal",
       description: "Je vous présente ici mes compétences ainsi que quelques projets web. Le site est destiné à évoluer alors n’hésitez pas à revenir quand vous le voulez !",
@@ -81,27 +70,19 @@ export const Projects = () => {
     
   ];
   return (
- 
-                
-      <Container>
-    <Row>
-      
-                      
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                     
-                        </Row>
-  </Container>
-  
-            
+    <Container>
+      <Row>
+        { 
+          projects.map((project, index) => {
+            return ( 
+              <ProjectCard
+                  key={index}
+                    {...project}
+              /> )
+          })
+        }
+      </Row>
+    </Container>       
   )
 }
 

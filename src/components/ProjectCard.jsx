@@ -1,9 +1,7 @@
-
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
-{/* <Col xs={12} sm={6} md={4}> */}
 export const ProjectCard = ({ title, description, imgUrl, technos, href, codeHref, buttonDescription }) => {
   return (
     

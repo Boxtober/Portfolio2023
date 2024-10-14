@@ -1,8 +1,7 @@
 import reactIcon from '../assets/img/icon/react.svg';
 import viteIcon from '../assets/img/icon/vitejs.svg';
 import vueIcon from '../assets/img/icon/vuejs.svg';
-import typeScriptIcon from '../assets/img/icon/typeScript.png';
-
+import typeScriptIcon from '../assets/img/icon/Typescript.png';
 import threeIcon from '../assets/img/icon/Threejs.svg';
 import nodeIcon from '../assets/img/icon/node.svg';
 import sqlIcon from '../assets/img/icon/sql.png';

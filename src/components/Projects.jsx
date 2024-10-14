@@ -51,6 +51,15 @@ export const Projects = () => {
       buttonDescription: "Explore !"
     }, 
     {
+      title: "Booki",
+      description: "Intégration web dynamique et responsive d'après une maquette Figma.",
+      imgUrl: fisheye,
+      technos: "#Javascript #PatternFactory #Accessibilité",
+      href: "https://fisheyes-pi.vercel.app",
+      codeHref: "https://github.com/Boxtober/fisheyes",
+      buttonDescription: "Explore !"
+    }, 
+    {
       title: "Mug Custom",
       description: "Un configurateur permettant d'interagir avec un objet 3d et le personnaliser en temps réel, directement depuis le navigateur.",
       imgUrl: projet1,

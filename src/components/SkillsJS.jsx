@@ -6,7 +6,7 @@ import threeIcon from '../assets/img/icon/Threejs.svg';
 import nodeIcon from '../assets/img/icon/node.svg';
 import sqlIcon from '../assets/img/icon/sql.png';
 import angularIcon from '../assets/img/icon/angular.png';
-import gitIcon from '../assets/img/icon/GIT.svg';
+import gitIcon from '../assets/img/icon/Git.svg';
 import rxjsIcon from '../assets/img/icon/rxjs.png';
 
 export const SkillsJS = () => {

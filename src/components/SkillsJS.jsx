@@ -5,10 +5,10 @@ import typeScriptIcon from '../assets/img/icon/typeScript.png';
 
 import threeIcon from '../assets/img/icon/Threejs.svg';
 import nodeIcon from '../assets/img/icon/node.svg';
-import phpIcon from '../assets/img/icon/PHP-logo.svg';
-import mysqlIcon from '../assets/img/icon/mysql.svg';
+import sqlIcon from '../assets/img/icon/sql.png';
+import angularIcon from '../assets/img/icon/angular.png';
 import gitIcon from '../assets/img/icon/GIT.svg';
-
+import rxjsIcon from '../assets/img/icon/rxjs.png';
 
 export const SkillsJS = () => {
 
@@ -22,6 +22,18 @@ export const SkillsJS = () => {
 
                 <div className="SecondJsContainer">
 
+                <div className="otherItem">
+                        <img src={angularIcon} alt="react icon" className='otherIcon'/>
+                        <p className="otherList">Angular</p>
+                    </div>
+                <div className="otherItem">
+                    <img src={typeScriptIcon} alt="typeScript icon" className='otherIcon'/>
+                    <p className="otherList">TypeScript</p>
+                </div>
+                <div className="otherItem">
+                    <img src={rxjsIcon} alt="rxjs icon" className='otherIcon'/>
+                    <p className="otherList">RxJS</p>
+                </div>
                     <div className="otherItem">
                         <img src={reactIcon} alt="react icon" className='otherIcon'/>
                         <p className="otherList">React</p>
@@ -35,10 +47,7 @@ export const SkillsJS = () => {
                         <img src={viteIcon} alt="react icon" className='otherIcon'/>
                         <p className="otherList">Vite.js</p>
                     </div>
-                    <div className="otherItem">
-                        <img src={typeScriptIcon} alt="typeScript icon" className='otherIcon'/>
-                        <p className="otherList">TypeScript</p>
-                    </div>
+                   
 
                 </div>
 
@@ -53,19 +62,15 @@ export const SkillsJS = () => {
                     </div>
 
                     <div className="otherItem">
-                        <img src={mysqlIcon} alt="react icon" className='otherIcon'/>
-                        <p className="otherList">MySQL</p>
+                        <img src={sqlIcon} alt="react icon" className='otherIcon'/>
+                        <p className="otherList">SQL</p>
                     </div>
 
                     <div className="otherItem">
                         <img src={gitIcon} alt="react icon" className='otherIcon'/>
                         <p className="otherList">Git</p>
                     </div>
-                    <div className="otherItem">
-                        <img src={phpIcon} alt="php icon" className='otherIcon'/>
-                        <p className="otherList">PHP</p>
-                    </div>
-  
+                    
                 </div>
 
             </div>

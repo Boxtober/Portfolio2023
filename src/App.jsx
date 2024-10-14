@@ -31,7 +31,6 @@ export default function App() {
           </div>
           <div className="projectsContainer">
           <Projects /></div>
-          {/**<Cards /> */}
           <Contact />
           <Footer />
         </div> 

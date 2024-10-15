@@ -3,7 +3,6 @@ import flag from '../assets/img/flag.svg';
 import imgBanner from '../assets/img/imgBanner.png';
 import 'animate.css';
 
-
 export const Banner = () => {
 
     const [loopNum, setLoopNum] = useState(0);

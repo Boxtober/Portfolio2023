@@ -1,8 +1,8 @@
-#home > div > img {
+#home>div>img {
     width: 50%;
 }
 
-#home > .TxtImgContainer {
+#home>.TxtImgContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -23,6 +23,7 @@
     align-items: center;
 }
 
+
 .about {
     display: flex;
     flex-direction: row;
@@ -31,17 +32,17 @@
     width: 85%;
 }
 
-.about > p {
+.about>p {
     margin-top: 0;
     margin-bottom: 1rem;
     line-height: 170%;
 }
 
-#home > div > div > div > img {
+#home>div>div>div>img {
     margin-top: 5px;
 }
 
-#home > div > div > span {
+#home>div>div>span {
     font-family: 'Fredoka', sans-serif;
     font-size: 20px;
     font-weight: bolder;
@@ -52,11 +53,11 @@
     height: 55px;
 }
 
-#home > div > div > span::after{
-    content: "";  
-    border-top : 10px solid transparent;
-    border-bottom : 10px solid transparent;
-    border-left : 20px solid #FFFFFF;
+#home>div>div>span::after {
+    content: "";
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #FFFFFF;
     margin-left: 12px;
     position: absolute;
     top: auto;
@@ -67,23 +68,23 @@
 
 @media (max-width: 990px) {
 
-    #home > .TxtImgContainer {
+    #home>.TxtImgContainer {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    #home > div > img {
+    #home>div>img {
         width: 80%;
     }
 }
 
 @media (max-width: 500px) {
-    
+
     .designList {
         font-size: 13px !important;
     }
 
-    #home > div > div > div > img {
+    #home>div>div>div>img {
         display: none;
     }
 }

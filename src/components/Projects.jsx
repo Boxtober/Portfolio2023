@@ -10,7 +10,7 @@ import projet5 from '../assets/img/axiosAcnh2.jpg';
 import projet6 from '../assets/img/meteo.jpg';
 import petitsplats from '../assets/img/petitsplats.jpg';
 import fisheye from '../assets/img/fisheye.jpg';
-
+import booki from '../assets/img/booki.jpg';
 
 import 'animate.css';
 
@@ -53,10 +53,10 @@ export const Projects = () => {
     {
       title: "Booki",
       description: "Intégration web dynamique et responsive d'après une maquette Figma.",
-      imgUrl: fisheye,
+      imgUrl: booki,
       technos: "#Javascript #PatternFactory #Accessibilité",
-      href: "https://fisheyes-pi.vercel.app",
-      codeHref: "https://github.com/Boxtober/fisheyes",
+      href: "https://booki-opc.netlify.app",
+      codeHref: "https://github.com/Boxtober/Booki",
       buttonDescription: "Explore !"
     }, 
     {

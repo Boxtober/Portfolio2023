@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  background: #FFD984; 
+  background: #FFD984;
   z-index: 1;
 }
 
@@ -20,10 +20,11 @@
 
 @keyframes spin-anim {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -44,7 +45,7 @@ body {
   background-color: #FFD984;
   justify-content: center;
 }
- 
+
 .App {
   display: flex;
   flex-direction: column;
@@ -66,25 +67,29 @@ body {
   box-sizing: border-box;
 }
 
-button, #root > div > div > div.mainFormContainer > form > input[type=submit]:nth-child(4) {
-  font-family: 'Outfit';
+button,
+#root>div>div>div.mainFormContainer>form>input[type=submit]:nth-child(4) {
+  font-family: Outfit;
   font-size: 16px;
   font-weight: bolder;
   color: #212529;
-  padding : 1rem 1.5rem;
+  padding: 1rem 5rem;
   background: #FFC400;
-  border: none;
   margin-top: 20px;
-  margin-bottom: 30px;
-  border-radius: 63px;
-  width: auto;
+  border-radius: 12rem;
+  width: 100%;
+  transition: ease-in-out;
+  border: none;
 }
 
 
-button:hover, #root > div > div > div.mainFormContainer > form > input[type=submit]:nth-child(4):hover {
-  background: #ffcc24;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 6px 10px;
-  transform: translateY(-1px);
+button:hover,
+#root>div>div>div.mainFormContainer>form>input[type=submit]:nth-child(4):hover {
+  /* background: #ffcc24;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 6px 10px; 
+  transform: scale(0.5);  transform: translateX(1px);*/
+
+  filter: brightness(1.1);
 }
 
 span.bold {
@@ -92,7 +97,7 @@ span.bold {
   font-weight: 700;
 }
 
-.yellow { 
+.yellow {
   color: #FFC400;
 }
 
@@ -111,12 +116,14 @@ h3 {
   color: #838383;
   padding-bottom: 15px;
 }
+
 h4 {
   font-family: 'Outfit';
   font-weight: 700;
   font-size: 20px;
   color: black;
 }
+
 h5 {
   font-family: 'Outfit';
   font-weight: 700;
@@ -137,21 +144,22 @@ h1 {
 }
 
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
   h1 {
     font-size: 32px;
-    margin: 12px  0px 12px;
+    margin: 12px 0px 12px;
   }
-  
+
   h2 {
     font-size: 18px;
   }
 
-  #root > div > section > div.mainToolsContainer > img {
+  #root>div>section>div.mainToolsContainer>img {
     width: 100%;
   }
 
-  h3, h4 {
+  h3,
+  h4 {
     font-size: 16px;
   }
 

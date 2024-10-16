@@ -25,10 +25,10 @@ export default function App() {
           </div>
           <Skills />
           <SkillsJS />
-          <div className="txtCards" id='Projects'>
+          {/* <div className="txtCards" id='Projects'>
             <h2>Projets développement web.</h2>
             <h3>Quelques projets réalisés dans le cadre de ma formation :</h3>
-          </div>
+          </div> */}
           <div className="projectsContainer">
           <Projects /></div>
           <Contact />

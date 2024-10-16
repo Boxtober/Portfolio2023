@@ -98,8 +98,7 @@ export const Projects = () => {
   ];
   
   return (
-    <Container>
-      <Row>
+    <Container className="cards-container">
         { 
           projects.map((project, index) => {
             return ( 
@@ -109,7 +108,7 @@ export const Projects = () => {
               /> )
           })
         }
-      </Row>
+      
     </Container>       
   )
 }

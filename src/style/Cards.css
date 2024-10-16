@@ -1,14 +1,34 @@
 .projectsContainer {
-    padding-top: 50px;
+    padding-top: 6rem;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 17rem;
+    padding-top: 2rem;
+}
 
+.btn-card-container {
+    display: flex;
+    flex-direction: row;
+}
 
-.react-multiple-carousel__arrow, #root > div > div > section.mainCarouselContainer > div > 
-div.react-multi-carousel-list.container.carousel > button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right, 
-#root > div > div > section.mainCarouselContainer > div > div.react-multi-carousel-list.container.carousel > 
-button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left
- {
+.cards-container {
+    display: grid;
+    justify-items: stretch;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.react-multiple-carousel__arrow,
+#root>div>div>section.mainCarouselContainer>div>div.react-multi-carousel-list.container.carousel>button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right,
+#root>div>div>section.mainCarouselContainer>div>div.react-multi-carousel-list.container.carousel>button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left {
 
     background: none;
     box-shadow: none;
@@ -16,11 +36,12 @@ button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left
 
 }
 
-.react-multiple-carousel__arrow::before, .react-multiple-carousel__arrow::after {
+.react-multiple-carousel__arrow::before,
+.react-multiple-carousel__arrow::after {
     background: none;
 }
 
-#root > div > div > a > img {
+#root>div>div>a>img {
     padding: 20px 0px 50px 0px;
     width: 45px;
 }
@@ -32,9 +53,15 @@ button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left
     padding: 10% 0% 0;
 }
 
-.Card.Img, .card-img-top {
-    border-radius: 12px;
+.Card.Img,
+.card-img-top {
+    border-radius: 18px 18px 0 0;
+    min-height: 12rem;
+    max-height: 12rem;
+    object-fit: cover;
+    object-position: top;
 }
+
 .cardsGroup {
     width: 100%;
     display: flex;
@@ -58,17 +85,17 @@ button.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left
     border: none;
     border-radius: 20px;
     filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
-    border: 12px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
     height: auto;
 
 }
 
-#root > div > div > a > img:hover {
+#root>div>div>a>img:hover {
     width: 50px;
 }
 
-button.exploreBtn.btn.btn-dark {
-    
+.exploreBtn {
+
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 700;
@@ -83,16 +110,15 @@ button.exploreBtn.btn.btn-dark {
     margin: 0;
 }
 
-button.codeBtn.btn.btn-dark {
+.codeBtn {
 
     font-family: 'Outfit';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-
     border: 3px solid #FFC400;
     border-radius: 14px;
-    color:#FFC400;
+    color: #FFC400;
     background: white;
     border-radius: 14px;
     padding: 8px 22px;
@@ -101,69 +127,53 @@ button.codeBtn.btn.btn-dark {
     margin: 0;
 }
 
+@media (max-width: 1200px) {
+    .cards-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 800px) {
+    .cards-container {
+        grid-template-columns: repeat(1, auto);
+    }
+}
 
 @media (max-width: 990px) {
-    button.exploreBtn.btn.btn-dark {
+    .exploreBtn {
         padding: 10px 10px;
     }
-    button.codeBtn.btn.btn-dark {
+
+    .codeBtn {
         padding: 10px 10px;
     }
 }
+
 @media (max-width: 750px) {
     .cardsGroup {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 25px;
-     
-    }
 
-    button.exploreBtn.btn.btn-dark {
-        padding:0;
-        width: 100px;
-    }
-    button.codeBtn.btn.btn-dark {
-        padding:0;
-        width: 100px;
-    }
-    .cardBackground {
-        width: 100%;
-    }
-    .txtCards {
-
-        padding: 20% 0% 0%;
     }
 }
-@media (max-width: 500px) { 
+
+@media (max-width: 500px) {
 
     button.exploreBtn.btn.btn-dark {
         margin-right: 10px !important;
-        padding:0;
+        padding: 0;
         width: 100px;
     }
+
     button.codeBtn.btn.btn-dark {
-        padding:0;
+        padding: 0;
         width: 100px;
     }
 
-    #root > div > div > a > img {
+    #root>div>div>a>img {
         padding: 50px 0px 50px 0px;
-       
+
     }
-}
-
-@media (max-width: 358px) { 
-
-    button.exploreBtn.btn.btn-dark {
-        margin-bottom: 10px;
-       
-    }
-
-    .mainCard {
-        border: 5px solid #FFFFFF;
-        
-    }
-
-    
 }

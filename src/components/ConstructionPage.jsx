@@ -15,6 +15,9 @@ export default function ConstructionPage() {
     email: '',
     message: ''
   });
+
+  const [confirmation, setConfirmation] = useState('');
+
 const form = useRef();
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -23,19 +26,21 @@ const form = useRef();
     e.preventDefault();
     emailjs
       .sendForm(
-        'service_v5wru1c',
-        'template_24j2sx5',
-        form.current,
-        'C9CXAAcZwFVrvvmWd'
+        'service_ig3ezvh',  
+  'template_24j2sx5',  
+  form.current,
+  'YiSHH0-PG0u3t46S5'
       )
       .then(
         (result) => {
           console.log("Message envoyé !");
-          form.current.reset(); // ✅ reset le formulaire
-          setFormData({ name: '', email: '', message: '' }); // ✅ reset state
+          form.current.reset(); 
+          setFormData({ name: '', email: '', message: '' }); 
+          setConfirmation('Bien reçu, à bientôt ! 📮');
         },
         (error) => {
           console.log("Erreur :", error.text);
+          setConfirmation('Une erreur est survenue 😳 Merci de réessayer ou de me contacter directement à : contact.asartwork@gmail.com.');
         }
       );
   };
@@ -191,8 +196,8 @@ const isMobile = windowWidth <= 768;
                 textShadow: '0 0 40px rgba(255, 213, 134, 0.68)',
 
               }}>
-                Je met à jour mon portfolio avec encore plus de <strong style={{ color: '#EEAB00', fontWeight: '700' }}>projets</strong>,
-                 une interface repensée, et
+                Je mets à jour mon portfolio avec encore plus de <strong style={{ color: '#EEAB00', fontWeight: '700' }}>projets</strong>,
+                 une interface repensée et
                 une expérience
                 <strong style={{ color: '#EEAB00', fontWeight: '700' }}>  utilisateur </strong> optimisée.   Je reviens très bientôt !
                 
@@ -320,9 +325,21 @@ const isMobile = windowWidth <= 768;
                   border: 'none',
                   background: 'rgb(255, 196, 0)',
                   color: 'white',
-                  cursor: 'pointer'
+                  cursor: 'pointer',
+                  fontSize: '18px',
+                  
                 }}>Envoyer le message</button>
                 </form>
+                {confirmation && (
+                  <p style={{
+                    fontFamily: 'Quicksand, sans-serif',
+                    color: confirmation.startsWith('✅') ? 'green' : 'red',
+                    marginBottom: '1rem',
+                    fontWeight: '600'
+                  }}>
+                    {confirmation}
+                  </p>
+                )}
             </div>
           </div>
         </div>

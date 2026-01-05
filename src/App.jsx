@@ -1,4 +1,13 @@
-import { Banner } from "./components/Banner.jsx";
+import ConstructionPage from './components/ConstructionPage.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './app.css';
+
+export default function App() {
+  return <ConstructionPage />;
+}
+
+
+{/* import { Banner } from "./components/Banner.jsx";
 import { NavBar } from "./components/NavBar.jsx";
 import { Skills } from "./components/Skills.jsx";
 import { SkillsJS } from "./components/SkillsJS.jsx";
@@ -25,10 +34,7 @@ export default function App() {
           </div>
           <Skills />
           <SkillsJS />
-          {/* <div className="txtCards" id='Projects'>
-            <h2>Projets développement web.</h2>
-            <h3>Quelques projets réalisés dans le cadre de ma formation :</h3>
-          </div> */}
+        
           <div className="projectsContainer">
           <Projects /></div>
           <Contact />
@@ -38,5 +44,5 @@ export default function App() {
       
     </Suspense>
   );
-}
+} */}
 
